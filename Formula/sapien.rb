@@ -4,7 +4,6 @@
 class Sapien < Formula
   desc "Local-first, agent-native API workspace engine"
   homepage "https://github.com/gs-sinha/sapien"
-  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
