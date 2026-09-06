@@ -4,6 +4,10 @@
 class Sapien < Formula
   desc "Local-first, agent-native API workspace engine"
   homepage "https://github.com/gs-sinha/sapien"
+  # Keep the explicit version: without it Homebrew scans "64" out of the
+  # arm64 archive name on Linux (Cellar/sapien/64). brew audit calls it
+  # redundant; it is not.
+  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
