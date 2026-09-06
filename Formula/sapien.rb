@@ -7,26 +7,26 @@ class Sapien < Formula
   # Keep the explicit version: without it Homebrew scans "64" out of the
   # arm64 archive name on Linux (Cellar/sapien/64). brew audit calls it
   # redundant; it is not.
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.0/sapien_1.0.0_darwin_arm64.tar.gz"
-      sha256 "5e1e3cc987a36185e55f210055761d7d47729d65494ed3cf1b3b2f306741ff40"
+      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.1/sapien_1.0.1_darwin_arm64.tar.gz"
+      sha256 "82fe794e67d5984ef7e8c09be2afcee0f8bd4494764b7cc588b7f471288caec7"
     else
-      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.0/sapien_1.0.0_darwin_amd64.tar.gz"
-      sha256 "fbe0327598a7c238bec9a51542639616618db49a9c39669c6e060bd504fe8199"
+      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.1/sapien_1.0.1_darwin_amd64.tar.gz"
+      sha256 "482b162691771785b946cc31f84345ac5e5b7dd2aaa365a130b78942f255f634"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.0/sapien_1.0.0_linux_arm64.tar.gz"
-      sha256 "a984b69ebb26aed53ccd92a1bc7701ac21aa09cb33139b8ed06fdba2788097e5"
+      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.1/sapien_1.0.1_linux_arm64.tar.gz"
+      sha256 "e8d4f5e668bdf81e7ae02f8620de06e831c617dca48b5faa335c81c923c8d46b"
     else
-      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.0/sapien_1.0.0_linux_amd64.tar.gz"
-      sha256 "1ae1cae4bae727a5acbb0484b16b4b37819435fa2927df6ed6b23135b1a703df"
+      url "https://github.com/gs-sinha/sapien/releases/download/v1.0.1/sapien_1.0.1_linux_amd64.tar.gz"
+      sha256 "535716384e6088cd1fa962fbdeb43d22d229b8510a1e0f520d8f1d8e5bb4a098"
     end
   end
 
